@@ -1,0 +1,168 @@
+[
+    {
+        "label": "pyperclip",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyperclip",
+        "description": "pyperclip",
+        "detail": "pyperclip",
+        "documentation": {
+            "value": "\n```python\nimport pyperclip\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {
+            "value": "\n```python\nimport unittest\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Contact",
+        "importPath": "contact",
+        "description": "contact",
+        "isExtraImport": true,
+        "detail": "contact",
+        "documentation": {
+            "value": "\n```python\nimport contact\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Contact",
+        "importPath": "contact",
+        "description": "contact",
+        "isExtraImport": true,
+        "detail": "contact",
+        "documentation": {
+            "value": "\n```python\nimport contact\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Contact",
+        "kind": 6,
+        "importPath": "contact",
+        "description": "contact",
+        "peekOfCode": "class Contact:\n    \"\"\"\n      Class that generates new instances of contacts.\n    \"\"\"\n    contact_list = [] # Empty contact list\n    def __init__(self,first_name,last_name,number,email):\n    # docstring removed for simplicity\n      self.first_name = first_name\n      self.last_name = last_name\n      self.phone_number = number",
+        "detail": "contact",
+        "documentation": {
+            "value": "\n```python\nfrom contact import Contact\n```\n\n```python\n\n\n```\n\n```python\nclass Contact:\n    \"\"\"\n      Class that generates new instances of contacts.\n    \"\"\"\n    contact_list = [] # Empty contact list\n    def __init__(self,first_name,last_name,number,email):\n    # docstring removed for simplicity\n      self.first_name = first_name\n      self.last_name = last_name\n      self.phone_number = number\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "TestContact",
+        "kind": 6,
+        "importPath": "contact_test",
+        "description": "contact_test",
+        "peekOfCode": "class TestContact(unittest.TestCase):\n    def setUp(self):\n        self.new_contact = Contact(\"James\",\"Muriuki\",\"0712345678\",\"james@ms.com\") # create contact object\n    def test_init(self):\n        '''\n        Test_init test case to test if the object is initialized properly\n        '''\n        self.assertEqual(self.new_contact.first_name,\"James\")\n        self.assertEqual(self.new_contact.last_name,\"Muriuki\")\n        self.assertEqual(self.new_contact.phone_number,\"0712345678\")",
+        "detail": "contact_test",
+        "documentation": {
+            "value": "\n```python\nfrom contact_test import TestContact\n```\n\n```python\n\n\n```\n\n```python\nclass TestContact(unittest.TestCase):\n    def setUp(self):\n        self.new_contact = Contact(\"James\",\"Muriuki\",\"0712345678\",\"james@ms.com\") # create contact object\n    def test_init(self):\n        '''\n        Test_init test case to test if the object is initialized properly\n        '''\n        self.assertEqual(self.new_contact.first_name,\"James\")\n        self.assertEqual(self.new_contact.last_name,\"Muriuki\")\n        self.assertEqual(self.new_contact.phone_number,\"0712345678\")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "create_contact",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def create_contact(fname,lname,phone,email):\n    '''\n    Function to create a new contact\n    '''\n    new_contact = Contact(fname,lname,phone,email)\n    return new_contact\n# Save contacts\ndef save_contacts(contact):\n    '''\n    Function to save contact",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import create_contact\n```\n\n```python\n\n\n```\n\n```python\ndef create_contact(fname,lname,phone,email):\n    '''\n    Function to create a new contact\n    '''\n    new_contact = Contact(fname,lname,phone,email)\n    return new_contact\n# Save contacts\ndef save_contacts(contact):\n    '''\n    Function to save contact\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def save_contacts(contact):\n    '''\n    Function to save contact\n    '''\n    contact.save_contact()\n# Delete contact    \ndef del_contact(contact):\n    '''\n    Function to delete a contact\n    '''",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import save_contacts\n```\n\n```python\n\n\n```\n\n```python\ndef save_contacts(contact):\n    '''\n    Function to save contact\n    '''\n    contact.save_contact()\n# Delete contact    \ndef del_contact(contact):\n    '''\n    Function to delete a contact\n    '''\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "del_contact",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def del_contact(contact):\n    '''\n    Function to delete a contact\n    '''\n    contact.delete_contact()\n# Finding a contact    \ndef find_contact(number):\n    '''\n    Function that finds a contact by number and returns the contact\n    '''",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import del_contact\n```\n\n```python\n\n\n```\n\n```python\ndef del_contact(contact):\n    '''\n    Function to delete a contact\n    '''\n    contact.delete_contact()\n# Finding a contact    \ndef find_contact(number):\n    '''\n    Function that finds a contact by number and returns the contact\n    '''\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "find_contact",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def find_contact(number):\n    '''\n    Function that finds a contact by number and returns the contact\n    '''\n    return Contact.find_by_number(number)\n# Check if a contact exists\ndef check_existing_contacts(number):\n    '''\n    Function that check if a contact exists with that number and return a Boolean\n    '''",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import find_contact\n```\n\n```python\n\n\n```\n\n```python\ndef find_contact(number):\n    '''\n    Function that finds a contact by number and returns the contact\n    '''\n    return Contact.find_by_number(number)\n# Check if a contact exists\ndef check_existing_contacts(number):\n    '''\n    Function that check if a contact exists with that number and return a Boolean\n    '''\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "check_existing_contacts",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def check_existing_contacts(number):\n    '''\n    Function that check if a contact exists with that number and return a Boolean\n    '''\n    return Contact.contact_exist(number)\n# Displaying all contacts\ndef display_contacts():\n    '''\n    Function that returns all the saved contacts\n    '''",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import check_existing_contacts\n```\n\n```python\n\n\n```\n\n```python\ndef check_existing_contacts(number):\n    '''\n    Function that check if a contact exists with that number and return a Boolean\n    '''\n    return Contact.contact_exist(number)\n# Displaying all contacts\ndef display_contacts():\n    '''\n    Function that returns all the saved contacts\n    '''\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def display_contacts():\n    '''\n    Function that returns all the saved contacts\n    '''\n    return Contact.display_contacts()\n# Copying a contact email\ndef copy_email(number):\n    '''\n    Function that returns copied email\n    '''",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import display_contacts\n```\n\n```python\n\n\n```\n\n```python\ndef display_contacts():\n    '''\n    Function that returns all the saved contacts\n    '''\n    return Contact.display_contacts()\n# Copying a contact email\ndef copy_email(number):\n    '''\n    Function that returns copied email\n    '''\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "copy_email",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def copy_email(number):\n    '''\n    Function that returns copied email\n    '''\n    return Contact.copy_email(number)\ndef main():\n    print(\"Hello Welcome to your contact list. What is your name?\")\n    user_name = input()\n    print(f\"Hello {user_name}. what would you like to do?\")\n    print('\\n')",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import copy_email\n```\n\n```python\n\n\n```\n\n```python\ndef copy_email(number):\n    '''\n    Function that returns copied email\n    '''\n    return Contact.copy_email(number)\ndef main():\n    print(\"Hello Welcome to your contact list. What is your name?\")\n    user_name = input()\n    print(f\"Hello {user_name}. what would you like to do?\")\n    print('\\n')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def main():\n    print(\"Hello Welcome to your contact list. What is your name?\")\n    user_name = input()\n    print(f\"Hello {user_name}. what would you like to do?\")\n    print('\\n')\n    while True:\n            print(\"Use these short codes : cc - create a new contact, dc - display contacts, de - delete a contact, fc -find a contact, ce -copy email, ex -exit the contact list \")\n            short_code = input().lower()\n            if short_code == 'cc':\n                    print(\"New Contact\")",
+        "detail": "run",
+        "documentation": {
+            "value": "\n```python\nfrom run import main\n```\n\n```python\n\n\n```\n\n```python\ndef main():\n    print(\"Hello Welcome to your contact list. What is your name?\")\n    user_name = input()\n    print(f\"Hello {user_name}. what would you like to do?\")\n    print('\\n')\n    while True:\n            print(\"Use these short codes : cc - create a new contact, dc - display contacts, de - delete a contact, fc -find a contact, ce -copy email, ex -exit the contact list \")\n            short_code = input().lower()\n            if short_code == 'cc':\n                    print(\"New Contact\")\n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]
